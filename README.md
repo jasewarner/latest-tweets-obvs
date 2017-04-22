@@ -1,4 +1,4 @@
-# Social Icons Obvs
+# Latest Tweets Obvs
 A simple WordPress plugin that displays a Twitter user's latest tweets
 
 ## Author
