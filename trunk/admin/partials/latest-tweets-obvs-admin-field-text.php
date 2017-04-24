@@ -21,6 +21,7 @@
 	       name="<?php echo esc_attr( $atts['name'] ); ?>"
 	       type="<?php echo esc_attr( $atts['type'] ); ?>"
 	       placeholder="<?php echo esc_attr( $atts['placeholder'] ); ?>"
-	       value="<?php echo esc_attr( $atts['value'] ); ?>" />
+	       value="<?php echo esc_attr( $atts['value'] ); ?>"
+			<?php echo esc_attr( $atts['required'] ); ?>/>
 </label>
 <span class="description"><?php _e( $atts['description'], 'latest-tweets-obvs' ); ?></span>

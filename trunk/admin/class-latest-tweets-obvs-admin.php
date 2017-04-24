@@ -145,6 +145,7 @@ class Latest_Tweets_Obvs_Admin {
 		$defaults[ 'min' ] = '';
 		$defaults[ 'pattern' ] = '';
 		$defaults[ 'before' ] = '';
+		$defaults[ 'required' ] = '';
 
 		apply_filters( $this->plugin_name . '-field-text-options-defaults', $defaults );
 		$atts = wp_parse_args( $args, $defaults );
@@ -211,7 +212,8 @@ class Latest_Tweets_Obvs_Admin {
 			array(
 				'id' => 'username',
 				'type' => 'text',
-				'before' => '@'
+				'before' => '@',
+				'required' => 'required'
 			)
 		);
 
@@ -223,7 +225,8 @@ class Latest_Tweets_Obvs_Admin {
 			$this->plugin_name . '-api',
 			array(
 				'id' => 'consumer_key',
-				'type' => 'text'
+				'type' => 'text',
+				'required' => 'required'
 			)
 		);
 
@@ -235,7 +238,8 @@ class Latest_Tweets_Obvs_Admin {
 			$this->plugin_name . '-api',
 			array(
 				'id' => 'consumer_secret',
-				'type' => 'text'
+				'type' => 'text',
+				'required' => 'required'
 			)
 		);
 
@@ -247,7 +251,8 @@ class Latest_Tweets_Obvs_Admin {
 			$this->plugin_name . '-api',
 			array(
 				'id' => 'access_token',
-				'type' => 'text'
+				'type' => 'text',
+				'required' => 'required'
 			)
 		);
 
@@ -259,7 +264,21 @@ class Latest_Tweets_Obvs_Admin {
 			$this->plugin_name . '-api',
 			array(
 				'id' => 'access_token_secret',
-				'type' => 'text'
+				'type' => 'text',
+				'required' => 'required'
+			)
+		);
+
+		add_settings_field(
+			'tweets_heading',
+			'Tweets Heading',
+			array( $this, 'field_text' ),
+			$this->plugin_name . '-display',
+			$this->plugin_name . '-display',
+			array(
+				'id' => 'tweets_heading',
+				'type' => 'text',
+				'placeholder' => 'e.g. Latest Tweets',
 			)
 		);
 

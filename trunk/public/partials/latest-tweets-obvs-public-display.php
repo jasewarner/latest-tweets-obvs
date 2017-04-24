@@ -27,6 +27,7 @@ $access_token = $options[ 'access_token' ];
 $access_token_secret = $options[ 'access_token_secret' ];
 
 // Set vars.
+$tweets_heading = false;
 $tweet_count = false;
 $exclude_replies = false;
 $include_retweets = false;
@@ -37,8 +38,13 @@ $show_description = false;
 $show_location = false;
 $use_plugin_css = false;
 
+// Check for heading to be placed above tweets.
+if ( isset( $options[ 'tweets_heading' ] ) ) {
+	$tweets_heading = $options[ 'tweets_heading' ];
+}
+
 // Check how many tweets to display.
-if ( isset( $options[ 'number_of_tweets'] ) ) {
+if ( isset( $options[ 'number_of_tweets' ] ) ) {
 	$tweet_count = $options[ 'number_of_tweets' ];
 	// If field empty, at least set to numerical value.
 	if ( '' === $tweet_count ) {
@@ -47,7 +53,7 @@ if ( isset( $options[ 'number_of_tweets'] ) ) {
 }
 
 // Check for including replies.
-if ( isset( $options[ 'exclude_replies'] ) ) {
+if ( isset( $options[ 'exclude_replies' ] ) ) {
 	$exclude_replies = $options[ 'exclude_replies' ];
 	// Set to true or false string.
 	if ( '1' === $exclude_replies ) {
@@ -58,7 +64,7 @@ if ( isset( $options[ 'exclude_replies'] ) ) {
 }
 
 // Check for including retweets.
-if ( isset( $options[ 'include_retweets'] ) ) {
+if ( isset( $options[ 'include_retweets' ] ) ) {
 	$include_retweets = $options[ 'include_retweets' ];
 	// Set to true or false string.
 	if ( '1' === $include_retweets ) {
@@ -69,33 +75,33 @@ if ( isset( $options[ 'include_retweets'] ) ) {
 }
 
 // Check for profile image.
-if ( isset( $options[ 'show_profile_image'] ) ) {
-	$show_profile_image = $options[ 'show_profile_image'];
+if ( isset( $options[ 'show_profile_image' ] ) ) {
+	$show_profile_image = $options[ 'show_profile_image' ];
 }
 
 // Check for display name.
-if ( isset( $options[ 'show_display_name'] ) ) {
-	$show_display_name = $options[ 'show_display_name'];
+if ( isset( $options[ 'show_display_name' ] ) ) {
+	$show_display_name = $options[ 'show_display_name' ];
 }
 
 // Check for username.
-if ( isset( $options[ 'show_username'] ) ) {
-	$show_username = $options[ 'show_username'];
+if ( isset( $options[ 'show_username' ] ) ) {
+	$show_username = $options[ 'show_username' ];
 }
 
 // Check for description.
-if ( isset( $options[ 'show_description'] ) ) {
-	$show_description = $options[ 'show_description'];
+if ( isset( $options[ 'show_description' ] ) ) {
+	$show_description = $options[ 'show_description' ];
 }
 
 // Check for location.
-if ( isset( $options[ 'show_location'] ) ) {
-	$show_location = $options[ 'show_location'];
+if ( isset( $options[ 'show_location' ] ) ) {
+	$show_location = $options[ 'show_location' ];
 }
 
 // Check for plugin CSS.
-if ( isset( $options[ 'use_plugin_css'] ) ) {
-	$use_plugin_css = $options[ 'use_plugin_css'];
+if ( isset( $options[ 'use_plugin_css' ] ) ) {
+	$use_plugin_css = $options[ 'use_plugin_css' ];
 }
 
 // Prep connection.
@@ -109,6 +115,30 @@ $user = $connection->get( 'users/show', [ 'screen_name' => $username ] );
 
 // Get bigger profile image.
 $profile_image = str_replace( 'normal', 'bigger', $user->profile_image_url );
+
+// Set $tweet var.
+$tweet = false;
+
+// Add links to tweet entities, such as hashtags, user mentions and links.
+if ( ! function_exists( 'rich_tweet' ) ) {
+
+	function rich_tweet( $tweet ) {
+
+		// Convert urls to <a> links.
+		$tweet = preg_replace( '/([\w]+\:\/\/[\w-?&;#~=\.\/\@]+[\w\/])/', '<a target="_blank" href="$1">$1</a>', $tweet );
+
+		// Convert hashtags to twitter searches in <a> links.
+		$tweet = preg_replace( '/#([A-Za-z0-9\/\.]*)/', '<a target="_new" href="http://twitter.com/search?q=$1">#$1</a>', $tweet );
+
+		// Convert attags to twitter profiles in <a> links.
+		$tweet = preg_replace( '/@([A-Za-z0-9\/\.\_]*)/', '<a href="http://www.twitter.com/$1">@$1</a>', $tweet );
+
+		return $tweet;
+
+	}
+
+};
+
 ?>
 
 <div class="lto--container">
@@ -135,7 +165,8 @@ $profile_image = str_replace( 'normal', 'bigger', $user->profile_image_url );
 	if ( '1' === $show_username ) {
 		?>
 
-		<p class="lto--username"><a href="https://twitter.com/<?php esc_html_e( $user->screen_name ); ?>"><?php esc_html_e( '@' . $user->screen_name ); ?></a></p>
+		<p class="lto--username"><a href="https://twitter.com/<?php esc_html_e( $user->screen_name ); ?>"><?php esc_html_e( '@' . $user->screen_name ); ?></a>
+		</p>
 
 		<?php
 	}
@@ -143,7 +174,9 @@ $profile_image = str_replace( 'normal', 'bigger', $user->profile_image_url );
 	if ( '1' === $show_description ) {
 		?>
 
-		<p class="lto--description"><?php esc_html_e( $user->description ); ?></p>
+		<p class="lto--description">
+			<small><?php esc_html_e( $user->description ); ?></small>
+		</p>
 
 		<?php
 	}
@@ -151,7 +184,17 @@ $profile_image = str_replace( 'normal', 'bigger', $user->profile_image_url );
 	if ( '1' === $show_location ) {
 		?>
 
-		<p class="lto--location"><?php esc_html_e( $user->location ); ?></p>
+		<p class="lto--location">
+			<small><?php esc_html_e( $user->location ); ?></small>
+		</p>
+
+		<?php
+	}
+	// Check for heading to be placed above tweets.
+	if ( $tweets_heading ) {
+		?>
+
+		<h5 class="lto--tweets-heading"><?php esc_html_e( $tweets_heading ); ?></h5>
 
 		<?php
 	}
@@ -162,7 +205,9 @@ $profile_image = str_replace( 'normal', 'bigger', $user->profile_image_url );
 		<?php
 		foreach ( $tweets as $tweet ) {
 
-			echo '<li role="listitem">' . $tweet->text . '</li>';
+			$tweet = $tweet->text;
+
+			echo '<li role="listitem">' . rich_tweet( $tweet ) . '</li>';
 
 		}
 		?>
