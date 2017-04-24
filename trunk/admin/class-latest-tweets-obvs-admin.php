@@ -213,7 +213,8 @@ class Latest_Tweets_Obvs_Admin {
 				'id' => 'username',
 				'type' => 'text',
 				'before' => '@',
-				'required' => 'required'
+				'required' => 'required',
+//				'pattern' => '/^[a-zA-Z0-9]*$/'
 			)
 		);
 
