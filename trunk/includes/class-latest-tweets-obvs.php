@@ -151,8 +151,14 @@ class Latest_Tweets_Obvs {
 
 		$plugin_admin = new Latest_Tweets_Obvs_Admin( $this->get_plugin_name(), $this->get_version() );
 
+		$this->loader->add_action( 'admin_menu', $plugin_admin, 'add_menu' );
+		$this->loader->add_action( 'admin_init', $plugin_admin, 'register_settings' );
+		$this->loader->add_action( 'admin_init', $plugin_admin, 'register_sections' );
+		$this->loader->add_action( 'admin_init', $plugin_admin, 'register_fields' );
+
+		$this->loader->add_action( 'plugin_action_links_' . LATEST_TWEETS_OBVS_BASENAME, $plugin_admin, 'settings_link' );
+
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
-		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 
 	}
 
@@ -167,8 +173,10 @@ class Latest_Tweets_Obvs {
 
 		$plugin_public = new Latest_Tweets_Obvs_Public( $this->get_plugin_name(), $this->get_version() );
 
+		$this->loader->add_action( 'init', $plugin_public, 'register_shortcode' );
+		$this->loader->add_action( 'init', $plugin_public, 'enable_widget_shortcodes' );
+
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
-		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
 
 	}
 

@@ -8,17 +8,17 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              http://jase.io/
+ * @link              https://jase.io/
  * @since             1.0.0
  * @package           Latest_Tweets_Obvs
  *
  * @wordpress-plugin
  * Plugin Name:       Latest Tweets Obvs
- * Plugin URI:        http://jase.io/archive/development/latest-tweets-obvs/
+ * Plugin URI:        https://jase.io/archive/development/latest-tweets-obvs/
  * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
  * Version:           1.0.0
  * Author:            Jase Warner
- * Author URI:        http://jase.io/
+ * Author URI:        https://jase.io/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       latest-tweets-obvs
@@ -28,6 +28,11 @@
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
 	die;
+}
+
+// Pull in plugin basename.
+if ( ! defined( 'LATEST_TWEETS_OBVS_BASENAME' ) ) {
+	define( 'LATEST_TWEETS_OBVS_BASENAME', plugin_basename( __FILE__ ) );
 }
 
 /**

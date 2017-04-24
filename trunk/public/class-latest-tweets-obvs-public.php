@@ -61,42 +61,61 @@ class Latest_Tweets_Obvs_Public {
 	 */
 	public function enqueue_styles() {
 
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Latest_Tweets_Obvs_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Latest_Tweets_Obvs_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
+		// Get plugin options.
+		$options = get_option( $this->plugin_name . '-options' );
+		$use_plugin_css = false;
 
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/latest-tweets-obvs-public.css', array(), $this->version, 'all' );
+		// Get value of plugin CSS option.
+		if ( isset( $options[ 'use_plugin_css'] ) ) {
+			$use_plugin_css = $options[ 'use_plugin_css'];
+		}
+
+		if ( '1' === $use_plugin_css ) {
+
+			wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/latest-tweets-obvs-public.css', array(), $this->version, 'all' );
+
+		}
 
 	}
 
 	/**
-	 * Register the JavaScript for the public-facing side of the site.
+	 * Get keys and access token.
 	 *
-	 * @since    1.0.0
+	 * @since   1.0.0
 	 */
-	public function enqueue_scripts() {
+	public function plugin_output() {
 
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Latest_Tweets_Obvs_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Latest_Tweets_Obvs_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
+		ob_start();
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/latest-tweets-obvs-public.js', array( 'jquery' ), $this->version, false );
+		require plugin_dir_path( dirname( __FILE__ ) ) . 'public/partials/latest-tweets-obvs-public-display.php';
+
+		$output = ob_get_contents();
+
+		ob_end_clean();
+
+		return $output;
+
+	}
+
+	/**
+	 * Register short code.
+	 *
+	 * @since   1.0.0
+	 */
+	public function register_shortcode() {
+
+		add_shortcode( 'latest_tweets_obvs', array( $this, 'plugin_output' ) );
+
+	}
+
+	/**
+	 * Enable shortcodes in text widgets.
+	 *
+	 * @since   1.0.0
+	 */
+	public function enable_widget_shortcodes() {
+
+		add_filter( 'widget_text', 'do_shortcode' );
 
 	}
 
