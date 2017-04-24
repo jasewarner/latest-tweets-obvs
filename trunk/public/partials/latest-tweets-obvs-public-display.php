@@ -175,7 +175,7 @@ if ( ! function_exists( 'rich_tweet' ) ) {
 		?>
 
 		<p class="lto--description">
-			<small><?php esc_html_e( $user->description ); ?></small>
+			<small><em><?php esc_html_e( $user->description ); ?></em></small>
 		</p>
 
 		<?php
