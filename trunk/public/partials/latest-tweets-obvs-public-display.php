@@ -127,7 +127,7 @@ $profile_image = str_replace( 'normal', 'bigger', $user->profile_image_url );
 	if ( '1' === $show_display_name ) {
 		?>
 
-		<h4><?php esc_html_e( $user->name ); ?></h4>
+		<h4 class="lto--display-name"><?php esc_html_e( $user->name ); ?></h4>
 
 		<?php
 	}
@@ -135,7 +135,7 @@ $profile_image = str_replace( 'normal', 'bigger', $user->profile_image_url );
 	if ( '1' === $show_username ) {
 		?>
 
-		<p><a href="https://twitter.com/<?php esc_html_e( $user->screen_name ); ?>"><?php esc_html_e( '@' . $user->screen_name ); ?></a></p>
+		<p class="lto--username"><a href="https://twitter.com/<?php esc_html_e( $user->screen_name ); ?>"><?php esc_html_e( '@' . $user->screen_name ); ?></a></p>
 
 		<?php
 	}
@@ -143,7 +143,7 @@ $profile_image = str_replace( 'normal', 'bigger', $user->profile_image_url );
 	if ( '1' === $show_description ) {
 		?>
 
-		<p><?php esc_html_e( $user->description ); ?></p>
+		<p class="lto--description"><?php esc_html_e( $user->description ); ?></p>
 
 		<?php
 	}
@@ -151,7 +151,7 @@ $profile_image = str_replace( 'normal', 'bigger', $user->profile_image_url );
 	if ( '1' === $show_location ) {
 		?>
 
-		<p><?php esc_html_e( $user->location ); ?></p>
+		<p class="lto--location"><?php esc_html_e( $user->location ); ?></p>
 
 		<?php
 	}
