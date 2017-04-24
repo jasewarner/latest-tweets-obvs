@@ -116,6 +116,8 @@ $tweets = $connection->get( 'statuses/user_timeline', [ 'screen_name' => $userna
 // Get user information.
 $user = $connection->get( 'users/show', [ 'screen_name' => $username ] );
 
+$user_search = $connection->get( 'users/search', [ 'q' => $username, 'include_entities', false ] );
+
 // Set $tweet var.
 $tweet = false;
 
@@ -146,78 +148,94 @@ if ( $connection->getLastHttpCode() == 200 ) {
 	<div class="lto--container">
 
 		<?php
-		// Check if profile image should be displayed.
-		if ( '1' === $show_profile_image ) {
+		// Check that user exists.
+		if ( ! empty( $user_search ) ) {
 
-			// Get bigger profile image.
-			$profile_image = str_replace( 'normal', 'bigger', $user->profile_image_url );
+			// Check if profile image should be displayed.
+			if ( '1' === $show_profile_image ) {
+
+				// Get bigger profile image.
+				$profile_image = str_replace( 'normal', 'bigger', $user->profile_image_url );
+				?>
+
+				<img class="lto--profile" src="<?php esc_html_e( $profile_image ); ?>" border="0"
+				     alt="<?php esc_html_e( $user->screen_name ); ?>" width="73" height="73"/>
+
+				<?php
+			}
+			// Check if display name should be displayed.
+			if ( '1' === $show_display_name ) {
+				?>
+
+				<h4 class="lto--display-name"><?php esc_html_e( $user->name ); ?></h4>
+
+				<?php
+			}
+			// Check if display name should be displayed.
+			if ( '1' === $show_username ) {
+				?>
+
+				<p class="lto--username"><a href="https://twitter.com/<?php esc_html_e( $user->screen_name ); ?>"><?php esc_html_e( '@' . $user->screen_name ); ?></a>
+				</p>
+
+				<?php
+			}
+			// Check if user description should be displayed.
+			if ( '1' === $show_description ) {
+				?>
+
+				<p class="lto--description">
+					<small><em><?php esc_html_e( $user->description ); ?></em></small>
+				</p>
+
+				<?php
+			}
+			// Check if user description should be displayed.
+			if ( '1' === $show_location ) {
+				?>
+
+				<p class="lto--location">
+					<small><?php esc_html_e( $user->location ); ?></small>
+				</p>
+
+				<?php
+			}
+			// Check for heading to be placed above tweets.
+			if ( $tweets_heading ) {
+				?>
+
+				<h5 class="lto--tweets-heading"><?php esc_html_e( $tweets_heading ); ?></h5>
+
+				<?php
+			}
 			?>
 
-			<img class="lto--profile" src="<?php esc_html_e( $profile_image ); ?>" border="0"
-			     alt="<?php esc_html_e( $user->screen_name ); ?>" width="73" height="73"/>
+			<ul class="lto--tweets" role="list">
+
+				<?php
+				foreach ( $tweets as $tweet ) {
+
+					$tweet = $tweet->text;
+
+					echo '<li role="listitem">' . rich_tweet( $tweet ) . '</li>';
+
+				}
+				?>
+
+			</ul>
 
 			<?php
-		}
-		// Check if display name should be displayed.
-		if ( '1' === $show_display_name ) {
+		} else {
 			?>
 
-			<h4 class="lto--display-name"><?php esc_html_e( $user->name ); ?></h4>
-
-			<?php
-		}
-		// Check if display name should be displayed.
-		if ( '1' === $show_username ) {
-			?>
-
-			<p class="lto--username"><a href="https://twitter.com/<?php esc_html_e( $user->screen_name ); ?>"><?php esc_html_e( '@' . $user->screen_name ); ?></a>
-			</p>
-
-			<?php
-		}
-		// Check if user description should be displayed.
-		if ( '1' === $show_description ) {
-			?>
-
-			<p class="lto--description">
-				<small><em><?php esc_html_e( $user->description ); ?></em></small>
-			</p>
-
-			<?php
-		}
-		// Check if user description should be displayed.
-		if ( '1' === $show_location ) {
-			?>
-
-			<p class="lto--location">
-				<small><?php esc_html_e( $user->location ); ?></small>
-			</p>
-
-			<?php
-		}
-		// Check for heading to be placed above tweets.
-		if ( $tweets_heading ) {
-			?>
-
-			<h5 class="lto--tweets-heading"><?php esc_html_e( $tweets_heading ); ?></h5>
+			<h4><?php _e( 'Oops!', 'latest-tweets-obvs' ); ?></h4>
+			<p><?php _e( 'It looks like the Latest Tweets Obvs plugin has encountered an issue.') ?>
+				<br><?php _e( 'This user does not seem to exist.') ?></p>
 
 			<?php
 		}
 		?>
 
-		<ul class="lto--tweets" role="list">
-
-			<?php
-			foreach ( $tweets as $tweet ) {
-
-				$tweet = $tweet->text;
-
-				echo '<li role="listitem">' . rich_tweet( $tweet ) . '</li>';
-
-			}
-			?>
-
-		</ul>
 	</div>
 
 	<?php
