@@ -3,7 +3,7 @@
 /**
  * Fired during plugin activation
  *
- * @link       http://jase.io/
+ * @link       https://jase.io/
  * @since      1.0.0
  *
  * @package    Latest_Tweets_Obvs

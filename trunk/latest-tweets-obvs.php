@@ -15,7 +15,7 @@
  * @wordpress-plugin
  * Plugin Name:       Latest Tweets Obvs
  * Plugin URI:        https://jase.io/archive/development/latest-tweets-obvs/
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Description:       Latest Tweets Obvs is a simple plugin that displays, well, latest tweets (obvs) via the Twitter API.
  * Version:           1.0.0
  * Author:            Jase Warner
  * Author URI:        https://jase.io/

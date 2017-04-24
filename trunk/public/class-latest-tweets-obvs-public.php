@@ -3,7 +3,7 @@
 /**
  * The public-facing functionality of the plugin.
  *
- * @link       http://jase.io/
+ * @link       https://jase.io/
  * @since      1.0.0
  *
  * @package    Latest_Tweets_Obvs

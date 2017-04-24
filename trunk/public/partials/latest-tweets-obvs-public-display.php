@@ -2,7 +2,7 @@
 /**
  * This file is used to markup the public-facing aspects of the plugin.
  *
- * @link       http://jase.io/
+ * @link       https://jase.io/
  * @since      1.0.0
  *
  * @package    Latest_Tweets_Obvs
