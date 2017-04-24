@@ -1,11 +1,9 @@
-#, fuzzy
 msgid ""
 msgstr ""
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Project-Id-Version: Latest Tweets Obvs\n"
-"POT-Creation-Date: 2017-04-24 19:32+0100\n"
-"PO-Revision-Date: 2017-04-24 19:32+0100\n"
-"Last-Translator: Jase Warner <jase@jase.io>\n"
+"POT-Creation-Date: 2017-04-24 19:42+0100\n"
+"PO-Revision-Date: 2017-04-24 19:43+0100\n"
 "Language-Team: Jase Warner <jase@jase.io>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,49 +14,57 @@ msgstr ""
 "X-Poedit-WPHeader: latest-tweets-obvs.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: Jase Warner <jase@jase.io>\n"
+"Language: ja\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #: admin/class-latest-tweets-obvs-admin.php:87
 msgid "Settings"
-msgstr ""
+msgstr "設定"
 
 #: admin/class-latest-tweets-obvs-admin.php:401
 msgid "Your Account"
-msgstr ""
+msgstr "ソーシャルアカウント"
 
 #: admin/class-latest-tweets-obvs-admin.php:408
 msgid "API Credentials"
-msgstr ""
+msgstr "API資格情報"
 
 #: admin/class-latest-tweets-obvs-admin.php:415
 msgid "Display Options"
-msgstr ""
+msgstr "表示オプション"
 
 #: admin/partials/latest-tweets-obvs-admin-page-settings.php:23
 msgid ""
 "Latest Tweets Obvs is a simple plugin that displays, well, latest tweets "
 "(obvs)."
 msgstr ""
+"最新のつぶやき Obv です、まあ、(obv) の最新のつぶやきを表示する単純なプラグ"
+"インです。"
 
 #: admin/partials/latest-tweets-obvs-admin-page-settings.php:24
 msgid ""
 "The plugin comes with optional CSS, albeit minimal, and is intended to fall "
 "back on your base theme styles."
 msgstr ""
+"プラグインは、とはいえ最小限、オプションの CSS が付属し、あなたの基本となる"
+"テーマのスタイルに戻るためのものです。"
 
 #: admin/partials/latest-tweets-obvs-admin-page-settings.php:25
 msgid ""
 "When you are done tweaking the settings below, display your tweets by "
 "pasting this shortcode anywhere in your site: "
 msgstr ""
+"あなたのサイトにどこでもこのショート コードを貼ることによってあなたのつぶや"
+"きを表示、以下の設定を調整します。"
 
 #: admin/partials/latest-tweets-obvs-admin-page-settings.php:25
 #: admin/partials/latest-tweets-obvs-admin-page-settings.php:40
 msgid "[latest_tweets_obvs]"
-msgstr ""
+msgstr "[latest_tweets_obvs]"
 
 #: admin/partials/latest-tweets-obvs-admin-page-settings.php:26
 msgid ""
@@ -66,16 +72,21 @@ msgid ""
 "free to <a href=\"https://www.paypal.me/jmwarnerltd\" target=\"_blank"
 "\">kindly buy me a coffee</a> ツ"
 msgstr ""
+"最後に、このプラグインが役に立つし、感じスーパー寛大です、気軽に<a href="
+"\"https://www.paypal.me/jmwarnerltd\" target=\"_blank\">親切私にコーヒーを購"
+"入する</a>ツ"
 
 #: admin/partials/latest-tweets-obvs-admin-page-settings.php:40
 msgid ""
 "Great! You’re done. Save your changes and paste this shortcode anywhere in "
 "your site: "
 msgstr ""
+"すごい！完了です。変更を保存し、あなたのサイトにどこでもこのショート コード"
+"を貼り付けます。"
 
 #: admin/partials/latest-tweets-obvs-admin-section-account.php:14
 msgid "Enter the username of the account you wish to display tweets from."
-msgstr ""
+msgstr "つぶやきを表示したいアカウントのユーザー名を入力します。"
 
 #: admin/partials/latest-tweets-obvs-admin-section-api.php:14
 msgid ""
@@ -83,6 +94,9 @@ msgid ""
 "the below credentials from <a href=\"https://apps.twitter.com/\" target="
 "\"_blank\">https://apps.twitter.com/</a>."
 msgstr ""
+"アプリを作成し、取得する必要があります、あなたのつぶやきを表示するために、 "
+"<a href=\"https://apps.twitter.com/\" target=\"_blank\">https://apps."
+"twitter.com/</a>からの資格情報の下。"
 
 #: admin/partials/latest-tweets-obvs-admin-section-api.php:15
 msgid ""
@@ -90,59 +104,63 @@ msgid ""
 "takes 5 minutes and there are plenty of helpful guides online, so start "
 "Googling."
 msgstr ""
+"それはこれを行う最初の時間といくつかの助けを必要がある場合は、パニックしない"
+"でください!5 分、たくさんの役に立つガイド オンラインで開始グーグル。"
 
 #: admin/partials/latest-tweets-obvs-admin-section-display.php:14
 msgid "Pick and choose what information is shown along with your tweets."
-msgstr ""
+msgstr "選んであなたのつぶやきとともにどのような情報が表示されます。"
 
 #: public/partials/latest-tweets-obvs-public-display.php:178
 msgid "@"
-msgstr ""
+msgstr "@"
 
 #: public/partials/latest-tweets-obvs-public-display.php:231
 #: public/partials/latest-tweets-obvs-public-display.php:249
 msgid "Oops!"
-msgstr ""
+msgstr "おっと！"
 
 #: public/partials/latest-tweets-obvs-public-display.php:232
 #: public/partials/latest-tweets-obvs-public-display.php:250
 msgid "It looks like the Latest Tweets Obvs plugin has encountered an issue."
-msgstr ""
+msgstr "最新のつぶやき Obv プラグインは、問題が発生するように見えます。"
 
 #: public/partials/latest-tweets-obvs-public-display.php:233
 msgid "This user does not seem to exist."
-msgstr ""
+msgstr "このユーザーは存在しません。"
 
 #: public/partials/latest-tweets-obvs-public-display.php:251
 msgid "Error: HTTP Code "
-msgstr ""
+msgstr "エラー: HTTP コード"
 
 #: public/partials/latest-tweets-obvs-public-display.php:253
 msgid "Try checking out the error code "
-msgstr ""
+msgstr "エラー コードをチェックしてみてください。"
 
 #: public/partials/latest-tweets-obvs-public-display.php:253
 msgid "here"
-msgstr ""
+msgstr "こちらです。"
 
 #. Plugin Name of the plugin/theme
 msgid "Latest Tweets Obvs"
-msgstr ""
+msgstr "Latest Tweets Obvs"
 
 #. Plugin URI of the plugin/theme
 msgid "https://jase.io/archive/development/latest-tweets-obvs/"
-msgstr ""
+msgstr "https://jase.io/archive/development/latest-tweets-obvs/"
 
 #. Description of the plugin/theme
 msgid ""
 "Latest Tweets Obvs is a simple plugin that displays, well, latest tweets "
 "(obvs) via the Twitter API."
 msgstr ""
+"最新のつぶやき Obv です、まあ、Twitter の API 経由の最新のつぶやき (obv) を"
+"表示する単純なプラグインです。"
 
 #. Author of the plugin/theme
 msgid "Jase Warner"
-msgstr ""
+msgstr "Jase Warner"
 
 #. Author URI of the plugin/theme
 msgid "https://jase.io/"
-msgstr ""
+msgstr "https://jase.io/"

@@ -1,11 +1,9 @@
-#, fuzzy
 msgid ""
 msgstr ""
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Project-Id-Version: Latest Tweets Obvs\n"
-"POT-Creation-Date: 2017-04-24 19:32+0100\n"
-"PO-Revision-Date: 2017-04-24 19:32+0100\n"
-"Last-Translator: Jase Warner <jase@jase.io>\n"
+"POT-Creation-Date: 2017-04-24 19:39+0100\n"
+"PO-Revision-Date: 2017-04-24 19:41+0100\n"
 "Language-Team: Jase Warner <jase@jase.io>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,49 +14,57 @@ msgstr ""
 "X-Poedit-WPHeader: latest-tweets-obvs.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: Jase Warner <jase@jase.io>\n"
+"Language: hi\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #: admin/class-latest-tweets-obvs-admin.php:87
 msgid "Settings"
-msgstr ""
+msgstr "सेटिंग्स"
 
 #: admin/class-latest-tweets-obvs-admin.php:401
 msgid "Your Account"
-msgstr ""
+msgstr "आपकी सामाजिक लेखा"
 
 #: admin/class-latest-tweets-obvs-admin.php:408
 msgid "API Credentials"
-msgstr ""
+msgstr "प्रत्यय-पत्र"
 
 #: admin/class-latest-tweets-obvs-admin.php:415
 msgid "Display Options"
-msgstr ""
+msgstr "प्रदर्शन आप्शनां"
 
 #: admin/partials/latest-tweets-obvs-admin-page-settings.php:23
 msgid ""
 "Latest Tweets Obvs is a simple plugin that displays, well, latest tweets "
 "(obvs)."
 msgstr ""
+"नवीनतम Tweets Obvs, अच्छी तरह से, नवीनतम tweets (obvs) को प्रदर्शित करता है एक "
+"सरल प्लगइन है।"
 
 #: admin/partials/latest-tweets-obvs-admin-page-settings.php:24
 msgid ""
 "The plugin comes with optional CSS, albeit minimal, and is intended to fall "
 "back on your base theme styles."
 msgstr ""
+"प्लगइन वैकल्पिक सीएसएस के साथ, हालांकि कम से कम आता है, और वापस अपने मूल विषय शैलियों "
+"पर गिर करने के लिए लक्षित है।"
 
 #: admin/partials/latest-tweets-obvs-admin-page-settings.php:25
 msgid ""
 "When you are done tweaking the settings below, display your tweets by "
 "pasting this shortcode anywhere in your site: "
 msgstr ""
+"जब आप कर रहे हैं नीचे, सेटिंग्स tweaking इस शोर्ट कहीं भी अपनी साइट में चिपका कर अपने "
+"tweets प्रदर्शित:"
 
 #: admin/partials/latest-tweets-obvs-admin-page-settings.php:25
 #: admin/partials/latest-tweets-obvs-admin-page-settings.php:40
 msgid "[latest_tweets_obvs]"
-msgstr ""
+msgstr "[latest_tweets_obvs]"
 
 #: admin/partials/latest-tweets-obvs-admin-page-settings.php:26
 msgid ""
@@ -66,16 +72,20 @@ msgid ""
 "free to <a href=\"https://www.paypal.me/jmwarnerltd\" target=\"_blank"
 "\">kindly buy me a coffee</a> ツ"
 msgstr ""
+"यदि आप इस प्लगइन उपयोगी पाते हैं और लग रहा है uber उदार हैं, अन्त में, <a href="
+"\"https://www.paypal.me/jmwarnerltd\" target=\"_blank\">कृपया मुझे एक कॉफी "
+"खरीदें</a>ツ करने के लिए स्वतंत्र महसूस"
 
 #: admin/partials/latest-tweets-obvs-admin-page-settings.php:40
 msgid ""
 "Great! You’re done. Save your changes and paste this shortcode anywhere in "
 "your site: "
 msgstr ""
+"शानदार! आप कर रहे हैं। अपने परिवर्तन सहेजें और इस शोर्ट कहीं भी अपनी साइट में पेस्ट:"
 
 #: admin/partials/latest-tweets-obvs-admin-section-account.php:14
 msgid "Enter the username of the account you wish to display tweets from."
-msgstr ""
+msgstr "से tweets प्रदर्शित करने के लिए इच्छित खाते का उपयोगकर्ता नाम दर्ज करें।"
 
 #: admin/partials/latest-tweets-obvs-admin-section-api.php:14
 msgid ""
@@ -83,6 +93,9 @@ msgid ""
 "the below credentials from <a href=\"https://apps.twitter.com/\" target="
 "\"_blank\">https://apps.twitter.com/</a>."
 msgstr ""
+"अपने tweets प्रदर्शित करने के लिए, तुम एक app बनाने के लिए और प्राप्त करने के लिए की "
+"आवश्यकता होगी <a href=\"https://apps.twitter.com/\" target=\"_blank"
+"\">https://apps.twitter.com/</a>से क्रेडेंशियल्स के नीचे।"
 
 #: admin/partials/latest-tweets-obvs-admin-section-api.php:15
 msgid ""
@@ -90,59 +103,63 @@ msgid ""
 "takes 5 minutes and there are plenty of helpful guides online, so start "
 "Googling."
 msgstr ""
+"अगर यह आपकी पहली बार यह कर रही है और आप कुछ मदद की ज़रूरत है, घबराओ मत! यह 5 "
+"मिनट लगते हैं और वहाँ रहे हैं बहुत मददगार तो प्रारंभ Googling ऑनलाइन, गाइड।"
 
 #: admin/partials/latest-tweets-obvs-admin-section-display.php:14
 msgid "Pick and choose what information is shown along with your tweets."
-msgstr ""
+msgstr "चुन लेने और क्या जानकारी अपने tweets के साथ दिखाया गया है।"
 
 #: public/partials/latest-tweets-obvs-public-display.php:178
 msgid "@"
-msgstr ""
+msgstr "@"
 
 #: public/partials/latest-tweets-obvs-public-display.php:231
 #: public/partials/latest-tweets-obvs-public-display.php:249
 msgid "Oops!"
-msgstr ""
+msgstr "ओह!"
 
 #: public/partials/latest-tweets-obvs-public-display.php:232
 #: public/partials/latest-tweets-obvs-public-display.php:250
 msgid "It looks like the Latest Tweets Obvs plugin has encountered an issue."
-msgstr ""
+msgstr "It looks like the Latest Tweets Obvs plugin has encountered an issue."
 
 #: public/partials/latest-tweets-obvs-public-display.php:233
 msgid "This user does not seem to exist."
-msgstr ""
+msgstr "इस उपयोगकर्ता मौजूद नहीं लगता।"
 
 #: public/partials/latest-tweets-obvs-public-display.php:251
 msgid "Error: HTTP Code "
-msgstr ""
+msgstr "त्रुटि: HTTP कोड"
 
 #: public/partials/latest-tweets-obvs-public-display.php:253
 msgid "Try checking out the error code "
-msgstr ""
+msgstr "त्रुटि कोड बाहर की जाँच करें"
 
 #: public/partials/latest-tweets-obvs-public-display.php:253
 msgid "here"
-msgstr ""
+msgstr "यहाँ"
 
 #. Plugin Name of the plugin/theme
 msgid "Latest Tweets Obvs"
-msgstr ""
+msgstr "Latest Tweets Obvs"
 
 #. Plugin URI of the plugin/theme
 msgid "https://jase.io/archive/development/latest-tweets-obvs/"
-msgstr ""
+msgstr "https://jase.io/archive/development/latest-tweets-obvs/"
 
 #. Description of the plugin/theme
 msgid ""
 "Latest Tweets Obvs is a simple plugin that displays, well, latest tweets "
 "(obvs) via the Twitter API."
 msgstr ""
+"Latest Tweets Obvs, अच्छी तरह से, चहचहाना एपीआई के माध्यम से नवीनतम tweets "
+"(obvs) को प्रदर्शित करता है एक सरल प्लगइन है।"
 
 #. Author of the plugin/theme
 msgid "Jase Warner"
-msgstr ""
+msgstr "Jase Warner"
 
 #. Author URI of the plugin/theme
 msgid "https://jase.io/"
-msgstr ""
+msgstr "https://jase.io/"

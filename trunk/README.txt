@@ -49,6 +49,22 @@ You will need to create an app at <a href="https://apps.twitter.com/">https://ap
 
 WordPress best sums up what a shortcode is: “A shortcode is a WordPress-specific code that lets you do nifty things with very little effort. Shortcodes can embed files or create objects that would normally require lots of complicated, ugly code in just one line”.
 
+== Languages ==
+
+This plugin currently supports the following languages:
+
+* Dutch
+* English
+* French
+* German
+* Hindi
+* Italian
+* Japanese
+* Mandarin
+* Portuguese
+* Russian
+* Spanish
+
 == Screenshots ==
 
 1. This is a screenshot of the plugin settings page.
