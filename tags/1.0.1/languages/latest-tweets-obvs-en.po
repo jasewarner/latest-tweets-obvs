@@ -1,0 +1,167 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: Latest Tweets Obvs\n"
+"POT-Creation-Date: 2017-04-24 19:37+0100\n"
+"PO-Revision-Date: 2017-04-24 19:38+0100\n"
+"Language-Team: Jase Warner <jase@jase.io>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: latest-tweets-obvs.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: Jase Warner <jase@jase.io>\n"
+"Language: en\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: admin/class-latest-tweets-obvs-admin.php:87
+msgid "Settings"
+msgstr "Settings"
+
+#: admin/class-latest-tweets-obvs-admin.php:401
+msgid "Your Account"
+msgstr "Your Account"
+
+#: admin/class-latest-tweets-obvs-admin.php:408
+msgid "API Credentials"
+msgstr "API Credentials"
+
+#: admin/class-latest-tweets-obvs-admin.php:415
+msgid "Display Options"
+msgstr "Display Options"
+
+#: admin/partials/latest-tweets-obvs-admin-page-settings.php:23
+msgid ""
+"Latest Tweets Obvs is a simple plugin that displays, well, latest tweets "
+"(obvs)."
+msgstr ""
+"Latest Tweets Obvs is a simple plugin that displays, well, latest tweets "
+"(obvs)."
+
+#: admin/partials/latest-tweets-obvs-admin-page-settings.php:24
+msgid ""
+"The plugin comes with optional CSS, albeit minimal, and is intended to fall "
+"back on your base theme styles."
+msgstr ""
+"The plugin comes with optional CSS, albeit minimal, and is intended to fall "
+"back on your base theme styles."
+
+#: admin/partials/latest-tweets-obvs-admin-page-settings.php:25
+msgid ""
+"When you are done tweaking the settings below, display your tweets by "
+"pasting this shortcode anywhere in your site: "
+msgstr ""
+"When you are done tweaking the settings below, display your tweets by "
+"pasting this shortcode anywhere in your site: "
+
+#: admin/partials/latest-tweets-obvs-admin-page-settings.php:25
+#: admin/partials/latest-tweets-obvs-admin-page-settings.php:40
+msgid "[latest_tweets_obvs]"
+msgstr "[latest_tweets_obvs]"
+
+#: admin/partials/latest-tweets-obvs-admin-page-settings.php:26
+msgid ""
+"Lastly, if you find this plugin useful and are feeling uber generous, feel "
+"free to <a href=\"https://www.paypal.me/jmwarnerltd\" target=\"_blank"
+"\">kindly buy me a coffee</a> ツ"
+msgstr ""
+"Lastly, if you find this plugin useful and are feeling uber generous, feel "
+"free to <a href=\"https://www.paypal.me/jmwarnerltd\" target=\"_blank"
+"\">kindly buy me a coffee</a> ツ"
+
+#: admin/partials/latest-tweets-obvs-admin-page-settings.php:40
+msgid ""
+"Great! You’re done. Save your changes and paste this shortcode anywhere in "
+"your site: "
+msgstr ""
+"Great! You’re done. Save your changes and paste this shortcode anywhere in "
+"your site: "
+
+#: admin/partials/latest-tweets-obvs-admin-section-account.php:14
+msgid "Enter the username of the account you wish to display tweets from."
+msgstr "Enter the username of the account you wish to display tweets from."
+
+#: admin/partials/latest-tweets-obvs-admin-section-api.php:14
+msgid ""
+"In order to display your tweets, you will need to create an app and obtain "
+"the below credentials from <a href=\"https://apps.twitter.com/\" target="
+"\"_blank\">https://apps.twitter.com/</a>."
+msgstr ""
+"In order to display your tweets, you will need to create an app and obtain "
+"the below credentials from <a href=\"https://apps.twitter.com/\" target="
+"\"_blank\">https://apps.twitter.com/</a>."
+
+#: admin/partials/latest-tweets-obvs-admin-section-api.php:15
+msgid ""
+"If it is your first time doing this and you need some help, don’t panic! It "
+"takes 5 minutes and there are plenty of helpful guides online, so start "
+"Googling."
+msgstr ""
+"If it is your first time doing this and you need some help, don’t panic! It "
+"takes 5 minutes and there are plenty of helpful guides online, so start "
+"Googling."
+
+#: admin/partials/latest-tweets-obvs-admin-section-display.php:14
+msgid "Pick and choose what information is shown along with your tweets."
+msgstr "Pick and choose what information is shown along with your tweets."
+
+#: public/partials/latest-tweets-obvs-public-display.php:178
+msgid "@"
+msgstr "@"
+
+#: public/partials/latest-tweets-obvs-public-display.php:231
+#: public/partials/latest-tweets-obvs-public-display.php:249
+msgid "Oops!"
+msgstr "Oops!"
+
+#: public/partials/latest-tweets-obvs-public-display.php:232
+#: public/partials/latest-tweets-obvs-public-display.php:250
+msgid "It looks like the Latest Tweets Obvs plugin has encountered an issue."
+msgstr "It looks like the Latest Tweets Obvs plugin has encountered an issue."
+
+#: public/partials/latest-tweets-obvs-public-display.php:233
+msgid "This user does not seem to exist."
+msgstr "This user does not seem to exist."
+
+#: public/partials/latest-tweets-obvs-public-display.php:251
+msgid "Error: HTTP Code "
+msgstr "Error: HTTP Code "
+
+#: public/partials/latest-tweets-obvs-public-display.php:253
+msgid "Try checking out the error code "
+msgstr "Try checking out the error code "
+
+#: public/partials/latest-tweets-obvs-public-display.php:253
+msgid "here"
+msgstr "here"
+
+#. Plugin Name of the plugin/theme
+msgid "Latest Tweets Obvs"
+msgstr "Latest Tweets Obvs"
+
+#. Plugin URI of the plugin/theme
+msgid "https://jase.io/archive/development/latest-tweets-obvs/"
+msgstr "https://jase.io/archive/development/latest-tweets-obvs/"
+
+#. Description of the plugin/theme
+msgid ""
+"Latest Tweets Obvs is a simple plugin that displays, well, latest tweets "
+"(obvs) via the Twitter API."
+msgstr ""
+"Latest Tweets Obvs is a simple plugin that displays, well, latest tweets "
+"(obvs) via the Twitter API."
+
+#. Author of the plugin/theme
+msgid "Jase Warner"
+msgstr "Jase Warner"
+
+#. Author URI of the plugin/theme
+msgid "https://jase.io/"
+msgstr "https://jase.io/"
