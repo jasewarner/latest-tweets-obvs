@@ -1,0 +1,43 @@
+/**
+ * Latest Tweets Obvs colours.
+ */
+
+// Misc.
+$lto-border-color:              rgba(0, 0, 0, 0.25);
+$lto-grey-light-color:          #f9f9f9;
+$lto-white-color:               #ffffff;
+
+/**
+ * WordPress colours.
+ */
+
+// Blues.
+$wp-blue-primary-color:         #0087be;
+$wp-blue-light-color:           #78dcfa;
+$wp-blue-medium-color:          #00aadc;
+$wp-blue-dark-color:            #005082;
+
+// Greys.
+$wp-grey-primary-color:         #87a6bc;
+$wp-grey-dark-color:            #2e4453;
+$wp-grey-dark-darken-10-color:  darken( $wp-grey-primary-color, 10);
+$wp-grey-dark-darken-20-color:  darken( $wp-grey-primary-color, 20);
+$wp-grey-dark-darken-30-color:  darken( $wp-grey-primary-color, 30);
+$wp-grey-light-color:           #f3f6f8;
+$wp-grey-lighten-10-color:      lighten( $wp-grey-primary-color, 10);
+$wp-grey-lighten-20-color:      lighten( $wp-grey-primary-color, 20);
+$wp-grey-lighten-30-color:      lighten( $wp-grey-primary-color, 30);
+
+// Oranges.
+$wp-orange-fire-color:          #d54e21;
+$wp-orange-jazzy-color:         #f0821e;
+
+// Validations and alerts.
+$wp-green-valid-color:          #4ab866;
+$wp-yellow-warning-color:       #f0b849;
+$wp-red-error-color:            #d94f4f;
+
+// Misc.
+$wp-body-color:                 #f1f1f1;
+$wp-field-border-color:         #DDDDDD;
+$wp-field-select-color:         $wp-grey-dark-color;

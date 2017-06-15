@@ -1,0 +1,58 @@
+/**
+ * Latest Tweets Obvs colours.
+ */
+/**
+ * WordPress colours.
+ */
+.lto--switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px; }
+  .lto--switch:hover .lto--slider {
+    background-color: #3d596d; }
+  .lto--switch input {
+    display: none; }
+  .lto--switch input:checked + .lto--slider {
+    background-color: #4ab866; }
+  .lto--switch input:focus + .lto--slider {
+    box-shadow: 0 0 1px #4ab866; }
+  .lto--switch input:checked + .lto--slider:before {
+    -ms-transform: translateX(16px);
+    transform: translateX(16px); }
+
+.lto--slider {
+  border-radius: 24px;
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #87a6bc;
+  transition: 0.4s; }
+  .lto--slider:before {
+    border-radius: 50%;
+    position: absolute;
+    content: '';
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s; }
+
+.lto--section {
+  border-top: 1px solid #DDDDDD;
+  margin-top: 1rem;
+  padding-top: 1rem; }
+  .lto--section:first-of-type {
+    border-top: 0;
+    margin-top: 0; }
+
+.lto--text {
+  border-left: 4px solid #0087be;
+  padding-left: 0.5rem; }
+  .lto--text p:last-child {
+    margin-bottom: 0; }
