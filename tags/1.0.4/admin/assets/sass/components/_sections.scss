@@ -1,0 +1,21 @@
+.lto--section {
+  border-top: 1px solid $wp-field-border-color;
+  margin-top: $lto-padding-sm;
+  padding-top: $lto-padding-sm;
+
+  &:first-of-type {
+    border-top: 0;
+    margin-top: 0;
+  }
+
+}
+
+.lto--text {
+  border-left: 4px solid $wp-blue-primary-color;
+  padding-left: $lto-padding-xs;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+}
