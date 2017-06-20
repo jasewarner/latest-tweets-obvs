@@ -11,5 +11,5 @@
 ?>
 
 <div class="lto--text">
-	<p><?php esc_html_e( 'Pick and choose what information is shown along with your tweets.', 'latest-tweets-obvs' ); ?></p>
+	<p><?php _e( 'Enter the username of the account you wish to display tweets from.', 'latest-tweets-obvs' ); ?></p>
 </div>
