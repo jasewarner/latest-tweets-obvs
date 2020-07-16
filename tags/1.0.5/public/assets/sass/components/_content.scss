@@ -1,0 +1,64 @@
+.lto--container {
+  text-align: center;
+
+  .lto--profile {
+    border-radius: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .lto--display-name {
+    font-size: 1rem;
+    margin: $lto-padding-sm 0;
+
+    & + .lto--username {
+      margin-top: -$lto-padding-sm;
+    }
+
+  }
+
+  .lto--username {
+    margin: $lto-padding-sm 0;
+  }
+
+  .lto--description,
+  .lto--location {
+    line-height: 1.333; // Perfect Fourth scale.
+  }
+
+  .lto--description {
+    margin: $lto-padding-sm auto;
+    max-width: 400px;
+  }
+
+  .lto--location {
+    margin: -$lto-padding-xs 0 $lto-padding-sm 0;
+  }
+
+  .lto--tweets-heading {
+    font-size: 1rem;
+    margin: $lto-padding-md 0;
+  }
+
+  .lto--tweets {
+    list-style: none;
+    margin: $lto-padding-md 0;
+    padding: 0;
+
+    li {
+      display: block;
+      margin: 0 auto $lto-padding-md auto;
+      max-width: 400px;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+
+    .time {
+      display: block;
+    }
+
+  }
+
+}

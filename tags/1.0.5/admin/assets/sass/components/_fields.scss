@@ -1,0 +1,53 @@
+.lto--switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+
+  &:hover .lto--slider {
+    background-color: $wp-grey-dark-darken-30-color;
+  }
+
+  input {
+    display: none;
+  }
+
+  input:checked + .lto--slider {
+    background-color: $wp-green-valid-color;
+  }
+
+  input:focus + .lto--slider {
+    box-shadow: 0 0 1px $wp-green-valid-color;
+  }
+
+  input:checked + .lto--slider:before {
+    transform: translateX(16px);
+  }
+
+}
+
+.lto--slider {
+  border-radius: 24px;
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $wp-grey-primary-color;
+  transition: $lto-transition;
+
+  &:before {
+    border-radius: 50%;
+    position: absolute;
+    content: '';
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: $lto-transition;
+  }
+
+}
