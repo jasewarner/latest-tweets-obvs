@@ -69,11 +69,11 @@ msgstr "[latest_tweets_obvs]"
 #: admin/partials/latest-tweets-obvs-admin-page-settings.php:26
 msgid ""
 "Lastly, if you find this plugin useful and are feeling uber generous, feel "
-"free to <a href=\"https://www.paypal.me/jmwarnerltd\" target=\"_blank"
+"free to <a href=\"https://www.buymeacoffee.com/jasewarner\" target=\"_blank"
 "\">kindly buy me a coffee</a> ツ"
 msgstr ""
 "Lastly, if you find this plugin useful and are feeling uber generous, feel "
-"free to <a href=\"https://www.paypal.me/jmwarnerltd\" target=\"_blank"
+"free to <a href=\"https://www.buymeacoffee.com/jasewarner\" target=\"_blank"
 "\">kindly buy me a coffee</a> ツ"
 
 #: admin/partials/latest-tweets-obvs-admin-page-settings.php:40

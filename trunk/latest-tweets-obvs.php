@@ -16,7 +16,7 @@
  * Plugin Name:       Latest Tweets Obvs
  * Plugin URI:        https://jase.io/archive/development/latest-tweets-obvs/
  * Description:       Latest Tweets Obvs is a simple plugin that displays, well, latest tweets (obvs) via the Twitter API.
- * Version:           1.0.6
+ * Version:           1.0.7
  * Author:            Jase Warner
  * Author URI:        https://jase.io/
  * License:           GPL-2.0+

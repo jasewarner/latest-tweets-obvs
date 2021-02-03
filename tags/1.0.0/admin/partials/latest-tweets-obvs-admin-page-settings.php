@@ -23,7 +23,7 @@
 		<p><?php _e( 'Latest Tweets Obvs is a simple plugin that displays, well, latest tweets (obvs).', 'latest-tweets-obvs' ); ?></p>
 		<p><?php _e( 'The plugin comes with optional CSS, albeit minimal, and is intended to fall back on your base theme styles.', 'latest-tweets-obvs' ); ?>
 			<br><?php _e( 'When you are done tweaking the settings below, display your tweets by pasting this shortcode anywhere in your site: ', 'latest-tweets-obvs' ); ?><code><?php esc_html_e( '[latest_tweets_obvs]' ); ?></code></p>
-		<p><?php _e( 'Lastly, if you find this plugin useful and are feeling uber generous, feel free to <a href="https://www.paypal.me/jmwarnerltd" target="_blank">kindly buy me a coffee</a> ツ', 'latest-tweets-obvs' ); ?></p>
+		<p><?php _e( 'Lastly, if you find this plugin useful and are feeling uber generous, feel free to <a href="https://www.buymeacoffee.com/jasewarner/" rel="noreferrer noopener" target="_blank">kindly buy me a coffee</a> ツ', 'latest-tweets-obvs' ); ?></p>
 
 		<section class="lto--section">
 			<?php do_settings_sections( $this->plugin_name . '-account' ); ?>
