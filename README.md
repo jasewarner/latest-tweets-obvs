@@ -1,6 +1,6 @@
 # Latest Tweets Obvs
 
-Latest Tweets Obvs is a simple plugin that displays, well, latest tweets (obvs) via the Twitter API.
+Latest Tweets Obvs is a simple plugin that displays latest tweets using the Twitter API.
 
 ## Author
 
